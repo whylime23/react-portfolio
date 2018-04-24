@@ -1,0 +1,122 @@
+body {
+  background: url('./images/background.jpg')
+    no-repeat
+    center
+    center
+    fixed;
+  background-size: cover;
+}
+
+.App {
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+.Paper {
+  max-width: 700px;
+  height: 90vh;
+  margin: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: solid thin rgba(0,0,0,0.15);
+}
+
+.paper-effect {
+  background: #fff;
+  box-shadow:
+  /* The top layer shadow */
+  0 1px 1px rgba(0,0,0,0.15),
+  /* The second layer */
+  0 10px 0 -5px #eee,
+  /* The second layer shadow */
+  0 10px 1px -4px rgba(0,0,0,0.15),
+   /* The third layer */
+  0 20px 0 -10px #eee,
+  /* The third layer shadow */
+  0 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+.Content {
+  padding: 4%;
+  overflow-y: auto;
+}
+
+h1, h2 {
+  font-family: 'Poiret One', cursive;
+}
+
+.initial-heading {
+  margin-top: 0;
+}
+
+.About-Me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emily-photo {
+  max-width: 250px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+
+.fa {
+  margin-right: 15px;
+}
+
+.Portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-heading {
+  margin-top: 5%;
+}
+
+.screenshot {
+  max-width: 299px;
+  margin: 1%;
+  border: solid thin #e5e5e5;
+  border-radius: 5px;
+}
+
+.Footer {
+  margin: auto auto 0 auto;
+  text-align: center;
+  color: #DDDDDD;
+  padding: 1%;
+}
+
+.Footer a {
+  color: #7FDBFF;
+}
+
+
+@media(max-width: 500px) {
+  .Paper {
+    margin: 5% 5% 2% 5%;
+  }
+  .About-Me {
+    flex-wrap: wrap;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .emily-photo {
+    max-width: 180px;
+    margin: 7% 10% 5% 10%;
+  }
+  .Footer {
+    font-size: 0.5em;
+  }
+}
