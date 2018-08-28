@@ -50,6 +50,14 @@ h1, h2 {
   font-family: 'Poiret One', cursive;
 }
 
+a {
+  color: black;
+}
+
+a:visited {
+  color: grey;
+}
+
 .initial-heading {
   margin-top: 0;
 }
@@ -86,6 +94,27 @@ h1, h2 {
   margin: 1%;
   border: solid thin #e5e5e5;
   border-radius: 5px;
+}
+
+.screenshot-important {
+  max-width: 499px;
+  margin: 1%;
+  border: solid thin #e5e5e5;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .screenshot-important {
+    max-width: 299px;
+  }
+}
+
+.screenshot-desc {
+  max-width: 490px;
+}
+
+.screenshot-linked {
+  margin: 1%;
 }
 
 .Footer {
