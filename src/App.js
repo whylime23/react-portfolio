@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import emilyPhoto from './images/emilyPhoto.png';
-import calculator from './images/calculator.PNG';
-import pomodoroClock from './images/pomodoroClock.PNG';
-import quoteMachine from './images/quoteMachine.PNG';
-import twitchTV from './images/twitchTV.PNG';
-import weatherApp from './images/weatherApp.PNG';
-import wikipediaViewer from './images/wikipediaViewer.PNG';
-import ticTacToe from './images/ticTacToe.PNG';
-import simonGame from './images/simonGame.PNG';
-import recipeShelf from './images/recipeShelf.PNG';
+import emilyPhoto from './images/emilyPhoto.JPG';
+import calculator from './images/calculator.jpg';
+import pomodoroClock from './images/pomodoroClock.jpg';
+import quoteMachine from './images/quoteMachine.jpg';
+import twitchTV from './images/twitchTV.jpg';
+import weatherApp from './images/weatherApp.jpg';
+import wikipediaViewer from './images/wikipediaViewer.jpg';
+import ticTacToe from './images/ticTacToe.jpg';
+import simonGame from './images/simonGame.jpg';
+import recipeShelf from './images/recipeShelf.jpg';
 
 class App extends Component {
   render() {
@@ -22,16 +22,24 @@ class App extends Component {
               <div>
                 <h1 className='initial-heading'>Emily Jane Taylor</h1>
                 <p>A self-taught front-end developer with a background in primary education and editing. </p>
-                <p>Has completed <b>FreeCodeCamp's Front End Development</b> certification and the React components of <b>Udemy's React 16 - A Complete Guide</b> certification.</p>
-                <p>Proficient at using Javascript, React, CSS, Bootstrap and HTML and with experience in Git.</p>
+                <p className='ul-heading'>Has completed:</p>
+                <ul>
+                  <li><b>FreeCodeCamp's Front End Development Certification</b></li>
+                  <li><b>Udemy's React 16 - A Complete Guide Certification</b> (React components)</li>
+                </ul>
+                <p>Proficient at using Javascript, React, CSS, Bootstrap and HTML, with experience in Git.</p>
                 <p>Hard working and enthusiastic with strong attention to detail and a desire to learn.</p>
+
+              </div>
+              <div className='emily-photo-div'>
+                <img className='emily-photo' src={emilyPhoto} alt='Emily Taylor' />
                 <div className='links'>
                   <a href="http://www.linkedin.com/in/emilytaylor23" target="_blank"><i className='fa fa-linkedin fa-lg'></i></a>
                   <a href="http://www.freecodecamp.com/whylime23" target="_blank"><i className='fa fa-free-code-camp fa-lg'></i></a>
                   <a href="http://www.github.com/whylime23" target="_blank"><i className='fa fa-github fa-lg'></i></a>
                 </div>
               </div>
-              <img className='emily-photo' src={emilyPhoto} alt='Emily Taylor' />
+
             </div>
             <div>
               <h1 className='portfolio-heading'>Portfolio</h1>
@@ -40,8 +48,8 @@ class App extends Component {
               <div className='Portfolio'>
                 <a href="http://www.recipeshelf.com.au" target="blank"><img className='screenshot-important' src={recipeShelf} alt='Recipe Shelf' /></a>
                 <div className='screenshot-desc'>
-                  Working collaboratively to rebuild the existing website in React.
-                  </div>
+                  <p className='caption'>Working collaboratively to rebuild the existing website in React.</p>
+                </div>
               </div>
 
               <h2>FreeCodeCamp Projects</h2>

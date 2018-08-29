@@ -68,14 +68,42 @@ a:visited {
   justify-content: center;
 }
 
+ul {
+  padding-left: 20;
+  margin-top: 0;
+}
+
+.ul-heading {
+  margin-bottom: 0;
+}
+
+.emily-photo-div {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .emily-photo-div {
+    margin: 1%;
+  }
+}
+
 .emily-photo {
   max-width: 250px;
   border-radius: 15px;
-  margin-left: 5%;
+}
+
+.links {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .fa {
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .Portfolio {
@@ -87,6 +115,11 @@ a:visited {
 
 .portfolio-heading {
   margin-top: 5%;
+}
+
+.caption {
+  font-size: .8em;
+  margin-top: 0;
 }
 
 .screenshot {
