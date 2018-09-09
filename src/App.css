@@ -17,7 +17,7 @@ body {
   }
 
 .Paper {
-  max-width: 700px;
+  max-width: 750px;
   height: 90vh;
   margin: 2% 10%;
   display: flex;
@@ -85,12 +85,6 @@ ul {
   flex-direction: column;
 }
 
-@media (max-width: 500px) {
-  .emily-photo-div {
-    margin: 1%;
-  }
-}
-
 .emily-photo {
   max-width: 250px;
   border-radius: 15px;
@@ -136,12 +130,6 @@ ul {
   border-radius: 5px;
 }
 
-@media (max-width: 500px) {
-  .screenshot-important {
-    max-width: 299px;
-  }
-}
-
 .screenshot-desc {
   max-width: 490px;
 }
@@ -169,15 +157,26 @@ ul {
   .About-Me {
     flex-wrap: wrap;
   }
+
   .links {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .emily-photo-div {
+    margin: 1%;
+  }
+
   .emily-photo {
     max-width: 180px;
     margin: 7% 10% 5% 10%;
   }
+
+  .screenshot-important {
+    max-width: 299px;
+  }
+
   .Footer {
     font-size: 0.5em;
   }
