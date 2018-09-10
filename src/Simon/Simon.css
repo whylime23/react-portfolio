@@ -1,13 +1,10 @@
-body {
+.Simon {
   background: url('./images/background.jpg')
     no-repeat
     center
     center
     fixed;
   background-size: cover;
-}
-
-.Simon {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -250,7 +247,7 @@ button:hover:enabled {
   border-top: 10px solid #202020;
 }
 
-.Footer {
+.Simon-footer {
   width: 100%;
   margin: auto auto 0 auto;
   padding: 0.5% 0;
@@ -260,7 +257,7 @@ button:hover:enabled {
 }
 
 @media (max-width: 500px) {
-  .Footer {
+  .Simon-footer {
     font-size: 0.5em;
   }
 }

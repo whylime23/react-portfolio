@@ -1,6 +1,8 @@
 /* eslint jsx-a11y/media-has-caption: 0 */
 import React, { Component } from 'react';
 
+import BackButton from '../BackButton/BackButton';
+
 import './Simon.css';
 import greenSound from './sounds/simonSound1.mp3';
 import redSound from './sounds/simonSound2.mp3';
@@ -225,6 +227,7 @@ class Simon extends Component {
 
     return (
       <div className='Simon'>
+        <BackButton />
         <div className='Console'>
           <div className='Controls'>
             <h1 className='Simon-title'>SIMON</h1>
@@ -283,7 +286,7 @@ class Simon extends Component {
             </div>
           </div>
         </div>
-        <div className='Footer'>
+        <div className='Simon-footer'>
         Designed and coded by &nbsp;<a
             className='emily-link'
             href='https://www.freecodecamp.com/whylime23'
