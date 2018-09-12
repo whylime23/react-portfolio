@@ -221,7 +221,7 @@ class Pomodoro extends Component {
         </div>
 
         <div className='pom-footer'>
-          Designed and coded by Emily Taylor using Atom, React and Chome dev tools.
+          Designed and coded by Emily Taylor using React, Chome dev tools and Atom.
         </div>
 
       </div>

@@ -287,11 +287,7 @@ class Simon extends Component {
           </div>
         </div>
         <div className='Simon-footer'>
-        Designed and coded by &nbsp;<a
-            className='emily-link'
-            href='https://www.freecodecamp.com/whylime23'
-            target='_blank'
-            rel='noopener noreferrer'>Emily Taylor</a>&nbsp; using Atom, React and Chrome dev tools. Background image by rawpixel.com from Pexels.
+          Designed and coded by Emily Taylor using React, Chome dev tools and Atom. Background image by rawpixel.com from Pexels.
         </div>
       </div>
     );
