@@ -1,0 +1,158 @@
+.pomodoro button {
+  border: none;
+  margin: 3px;
+  padding: 0 7px;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+}
+
+.pomodoro button:focus {
+  outline: thin dotted;
+}
+
+.pomodoro button:active {
+  transform: translateY(3px);
+}
+
+.fa-icon {
+  font-size: 1.5em;
+  color: #D4A0A7;
+}
+
+.fa-icon:hover {
+  color: #AE8389;
+}
+
+.toggleMode {
+  border: solid;
+  border-color: #D4A0A7;
+  border-radius: 10px;
+  padding: 5px;
+  width: 127px;
+}
+
+.toggleMode:hover {
+  border-color: #AE8389;
+  background: #E8E8DD;
+}
+
+.isToggled {
+  background: #D4A0A7;
+}
+
+.isToggled:hover {
+  background: #AE8389;
+}
+
+.incrementer:hover {
+  font-weight: bold;
+}
+
+.pomodoro {
+  background: #FFFFF3;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #461220
+}
+
+.appContainer {
+  flex: 1;
+}
+
+.pom-heading {
+  font-family: 'Leckerli One', cursive;
+  text-align: center;
+  font-size: 400%;
+  color: #461220;
+  margin: 3%;
+}
+
+@media (max-width: 500px) {
+  .pom-heading {
+    font-size: 230%;
+  }
+}
+
+.clockContainer {
+  margin: 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+@media (min-width: 501px) {
+  .clockContainer {
+    margin: 0 0 3% 0;
+  }
+}
+
+.clockBody {
+  height: 300px;
+  width: 300px;
+  border: solid;
+  border-radius: 100%;
+  border-color: #92828D;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clockType {
+  margin-bottom: 3%;
+}
+
+.clockTimer {
+  margin-top: 3%;
+}
+
+.controlsContainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pom-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.sessionLength {
+  margin: 5% 7% 5% 0;
+}
+
+.breakLength {
+  margin: 5% 0 5% 7%;
+}
+
+.timers {
+  font-size: 2em;
+}
+
+.pom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 3% 1% 3%;
+}
+
+.pom-footer a {
+  color: #C84630;
+}
+
+@media (max-width: 500px) {
+  .pom-footer {
+    font-size: 0.5em;
+  }
+}

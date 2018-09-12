@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import './Home.css';
 
@@ -60,8 +60,10 @@ class Home extends Component {
               <div className='Portfolio'>
                 <Link to="/simon" className="screenshot-linked"><img className='screenshot' src={simonGame} alt='Simon Game' /></Link>
                 {/* <a href="https://github.com/whylime23/simon-game" target="_blank" className="screenshot-linked"><img className='screenshot' src={simonGame} alt='Simon Game' /></a> */}
-                <a href="https://github.com/whylime23/tic-tac-toe" target="_blank" className="screenshot-linked"><img className='screenshot' src={ticTacToe} alt='Tic-tac-toe' /></a>
-                <a href="https://github.com/whylime23/pomodoro-clock" target="_blank" className="screenshot-linked"><img className='screenshot' src={pomodoroClock} alt='Pomodoro Clock' /></a>
+                <Link to="/tictactoe" className="screenshot-linked"><img className='screenshot' src={ticTacToe} alt='Tic-Tac-Toe' /></Link>
+                {/* <a href="https://github.com/whylime23/tic-tac-toe" target="_blank" className="screenshot-linked"><img className='screenshot' src={ticTacToe} alt='Tic-tac-toe' /></a> */}
+                <Link to="/pomodoro" className="screenshot-linked"><img className='screenshot' src={pomodoroClock} alt='Pomodoro Clock' /></Link>
+                {/* <a href="https://github.com/whylime23/pomodoro-clock" target="_blank" className="screenshot-linked"><img className='screenshot' src={pomodoroClock} alt='Pomodoro Clock' /></a> */}
                 <a href="https://codepen.io/whylime23/full/NYwgMy/" target="_blank" className="screenshot-linked"><img className='screenshot' src={calculator} alt='Javascript Calculator' /></a>
                 <a href="https://codepen.io/whylime23/full/vJPJWm/" target="_blank" className="screenshot-linked"><img className='screenshot' src={twitchTV} alt='TwitchTV Streamer' /></a>
                 <a href="https://codepen.io/whylime23/full/MvPWMK/" target="_blank" className="screenshot-linked"><img className='screenshot' src={wikipediaViewer} alt='Wikipedia Viewer' /></a>
