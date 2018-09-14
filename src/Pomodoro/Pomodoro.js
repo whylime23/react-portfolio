@@ -167,6 +167,17 @@ class Pomodoro extends Component {
     }
   };
 
+  renderClockTime = () => {
+    const { mode, sessionTimer, breakTimer } = this.state;
+    const sessionTime = mode === 'Session' ? sessionTimer : breakTimer;
+
+    return (
+      <div className='clockTimer'>
+        {Number.isInteger(sessionTime) || !sessionTime.includes(':') ? `${sessionTime}:00` : sessionTime}
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className='pomodoro'>
@@ -187,9 +198,7 @@ class Pomodoro extends Component {
                   }
                 </button>
               </div>
-              <div className='clockTimer'>
-                {this.state.mode === 'Session' ? this.state.sessionTimer : this.state.breakTimer}
-              </div>
+              {this.renderClockTime()}
             </div>
           </div>
 
@@ -197,7 +206,7 @@ class Pomodoro extends Component {
             <div className='pom-controls'>
               <div className='sessionLength'>
                 <div>
-                  <button className='pom-button toggleMode isToggled' onClick={this.handleSession}>Session Length</button>
+                  <button className={`pom-button toggleMode ${this.state.mode === 'Session' ? 'isToggled' : ''}`} onClick={this.handleSession}>Session Length</button>
                 </div>
                 <div className='timers'>
                   <button className='pom-button incrementer' onClick={this.handleSessionTimerMinus}> - </button>
@@ -207,7 +216,7 @@ class Pomodoro extends Component {
               </div>
               <div className='breakLength'>
                 <div>
-                  <button className='pom-button toggleMode' onClick={this.handleBreak}>Break Length</button>
+                  <button className={`pom-button toggleMode ${this.state.mode === 'Break' ? 'isToggled' : ''}`} onClick={this.handleBreak}>Break Length</button>
                 </div>
                 <div className='timers'>
                   <button className='pom-button incrementer' onClick={this.handleBreakTimerMinus}> - </button>
