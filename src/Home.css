@@ -1,13 +1,10 @@
-body {
+.Home {
   background: url('./images/background.jpg')
     no-repeat
     center
     center
     fixed;
   background-size: cover;
-}
-
-.Home {
   height:100vh;
   display: flex;
   align-items: center;
