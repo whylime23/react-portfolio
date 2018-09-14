@@ -180,7 +180,7 @@ class Pomodoro extends Component {
                 {this.state.mode}
               </div>
               <div>
-                <button className='togglePause' onClick={this.handlePause}>
+                <button className='pom-button togglePause' onClick={this.handlePause}>
                   { this.state.isPaused ?
                     <i className="fa-icon fa fa-play-circle fa-3x"></i> :
                     <i className="fa-icon fa fa-pause-circle fa-3x"></i>
@@ -197,22 +197,22 @@ class Pomodoro extends Component {
             <div className='pom-controls'>
               <div className='sessionLength'>
                 <div>
-                  <button className='toggleMode isToggled' onClick={this.handleSession}>Session Length</button>
+                  <button className='pom-button toggleMode isToggled' onClick={this.handleSession}>Session Length</button>
                 </div>
                 <div className='timers'>
-                  <button className='incrementer' onClick={this.handleSessionTimerMinus}> - </button>
+                  <button className='pom-button incrementer' onClick={this.handleSessionTimerMinus}> - </button>
                   {this.state.sessionSet}
-                  <button className='incrementer' onClick={this.handleSessionTimerPlus}> + </button>
+                  <button className='pom-button incrementer' onClick={this.handleSessionTimerPlus}> + </button>
                 </div>
               </div>
               <div className='breakLength'>
                 <div>
-                  <button className='toggleMode' onClick={this.handleBreak}>Break Length</button>
+                  <button className='pom-button toggleMode' onClick={this.handleBreak}>Break Length</button>
                 </div>
                 <div className='timers'>
-                  <button className='incrementer' onClick={this.handleBreakTimerMinus}> - </button>
+                  <button className='pom-button incrementer' onClick={this.handleBreakTimerMinus}> - </button>
                   {this.state.breakSet}
-                  <button className='incrementer' onClick={this.handleBreakTimerPlus}> + </button>
+                  <button className='pom-button incrementer' onClick={this.handleBreakTimerPlus}> + </button>
                 </div>
               </div>
             </div>

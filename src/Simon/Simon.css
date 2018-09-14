@@ -1,5 +1,5 @@
 .Simon {
-  background: url('./images/simonBackground.webp')
+  background: url('./images/simonBackground.jpg')
     no-repeat
     center
     center
@@ -56,14 +56,14 @@
   margin: 5px;
 }
 
-button {
+.simon-button {
   background: none;
   border: none;
   color: inherit;
   font: inherit;
 }
 
-button:hover:enabled {
+.simon-button:hover:enabled {
   cursor: pointer;
 }
 
@@ -160,7 +160,7 @@ button:hover:enabled {
   flex-direction: row;
 }
 
-.Row {
+.Simon-Row {
   display: flex;
   flex-direction: row;
 }

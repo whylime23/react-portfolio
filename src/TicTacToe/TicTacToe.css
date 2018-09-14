@@ -1,5 +1,5 @@
 .TicTacToe {
-  background: url('./images/tttBackground.webp')
+  background: url('./images/tttBackground.jpg')
     no-repeat
     center
     center
@@ -62,12 +62,6 @@
   margin-top: 0;
 }
 
-.win-buttons {
-  font-size: 0.8em;
-  padding: 5px 10px;
-  margin: 5px;
-}
-
 .TicTacToe button {
   background: none;
   border: none;
@@ -78,6 +72,12 @@
 
 .TicTacToe button:hover {
   outline: dotted;
+}
+
+.win-buttons {
+  font-size: 0.8em !important; 
+  padding: 5px 10px;
+  margin: 5px;
 }
 
 .Chalkboard {
@@ -116,7 +116,7 @@
   margin-bottom: 15px;
 }
 
-.Row {
+.Ttt-Row {
   display: flex;
   justify-content: center;
   align-items: center;

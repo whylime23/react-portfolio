@@ -287,7 +287,7 @@ class App extends Component {
             <div className='Heading'>Tic Tac Toe</div>
 
             <div className='Game'>
-              <div className='Row'>
+              <div className='Ttt-Row'>
                 <div className={`Box ttt-border-right ttt-border-bottom ${this.createClass(1)}`}>
                   <button className='Move 1' disabled={!this.state.board[1].clickable} onClick={() => this.handleClick('1')}>{this.state.board['1'].value}</button>
                 </div>
@@ -298,7 +298,7 @@ class App extends Component {
                   <button className='Move 3' disabled={!this.state.board[3].clickable} onClick={() => this.handleClick('3')}>{this.state.board['3'].value}</button>
                 </div>
               </div>
-              <div className='Row'>
+              <div className='Ttt-Row'>
                 <div className={`Box ttt-border-right ${this.createClass(4)}`}>
                   <button className='Move 4' disabled={!this.state.board[4].clickable} onClick={() => this.handleClick('4')}>{this.state.board['4'].value}</button>
                 </div>
@@ -309,7 +309,7 @@ class App extends Component {
                   <button className='Move 6' disabled={!this.state.board[6].clickable} onClick={() => this.handleClick('6')}>{this.state.board['6'].value}</button>
                 </div>
               </div>
-              <div className='Row'>
+              <div className='Ttt-Row'>
                 <div className={`Box ttt-border-right ttt-border-top ${this.createClass(7)}`}>
                   <button className='Move 7' disabled={!this.state.board[7].clickable} onClick={() => this.handleClick('7')}>{this.state.board['7'].value}</button>
                 </div>
@@ -322,7 +322,7 @@ class App extends Component {
               </div>
             </div>
 
-            <div className='Row'>
+            <div className='Ttt-Row'>
               <div className='Stats'>
                 <span className={this.state.currentPlayer === 'user' ? 'player-turn' : ''}>Player:</span>
                 <span>{this.state.playerWins}</span>

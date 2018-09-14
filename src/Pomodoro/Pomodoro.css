@@ -1,4 +1,4 @@
-.pomodoro button {
+.pom-button {
   border: none;
   margin: 3px;
   padding: 0 7px;
@@ -10,11 +10,11 @@
   line-height: normal;
 }
 
-.pomodoro button:focus {
+.pom-button:focus {
   outline: thin dotted;
 }
 
-.pomodoro button:active {
+.pom-button:active {
   transform: translateY(3px);
 }
 

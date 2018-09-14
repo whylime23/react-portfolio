@@ -237,18 +237,18 @@ class Simon extends Component {
                 <span><p className='button-label'>COUNT</p></span>
               </div>
               <div className='Control-buttons'>
-                <button className='Start-button indv-item' onClick={this.handleStart} disabled={!isOn}></button>
+                <button className='simon-button Start-button indv-item' onClick={this.handleStart} disabled={!isOn}></button>
                 <span><p className='button-label'>START</p></span>
               </div>
               <div className='Control-buttons'>
                 <span className={`Strict-light ${!isStrict ? 'strict-light-off' : 'strict-light-on'}`}></span>
-                <button className='Strict-button' disabled={!isOn} onClick={this.handleStrictMode}></button>
+                <button className='simon-button Strict-button' disabled={!isOn} onClick={this.handleStrictMode}></button>
                 <span><p className='button-label'>STRICT</p></span>
               </div>
             </div>
             <div className='On-toggle'>
               <p>ON</p>
-              <button className={`toggle-button `} onClick={this.handleOnToggle}>
+              <button className={`simon-button toggle-button `} onClick={this.handleOnToggle}>
                 <div className='toggle-icon'>
                   <i className={`fa fa-toggle-on fa-2x ${isOn ? 'rotate-icon' : ''}`}></i>
                 </div>
@@ -257,32 +257,32 @@ class Simon extends Component {
             </div>
           </div>
 
-          <div className='Row'>
+          <div className='Simon-Row'>
             <div className='Buttons Green border-top border-left border-right'>
               <audio ref={(element) => { this.green = element; }}>
                 <source src={greenSound} type='audio/mpeg'/>
               </audio>
-              <button className={`1 green-button play-buttons ${this.buttonLit('green')}`} onClick={() => this.handleQuadrantClick('green')} disabled={this.playButtonsEnable()}></button>
+              <button className={`simon-button 1 green-button play-buttons ${this.buttonLit('green')}`} onClick={() => this.handleQuadrantClick('green')} disabled={this.playButtonsEnable()}></button>
             </div>
             <div className='Buttons Red border-top border-right'>
               <audio ref={(element) => { this.red = element; }}>
                 <source src={redSound} type='audio/mpeg'/>
               </audio>
-              <button className={`2 red-button play-buttons ${this.buttonLit('red')}`} onClick={() => this.handleQuadrantClick('red')} disabled={this.playButtonsEnable()}></button>
+              <button className={`simon-button 2 red-button play-buttons ${this.buttonLit('red')}`} onClick={() => this.handleQuadrantClick('red')} disabled={this.playButtonsEnable()}></button>
             </div>
           </div>
-          <div className='Row'>
+          <div className='Simon-Row'>
             <div className='Buttons Yellow border-top border-bottom border-left border-right'>
               <audio ref={(element) => { this.yellow = element; }}> ? true : false
                 <source src={yellowSound} type='audio/mpeg'/>
               </audio>
-              <button className={`3 yellow-button play-buttons ${this.buttonLit('yellow')}`} onClick={() => this.handleQuadrantClick('yellow')} disabled={this.playButtonsEnable()}></button>
+              <button className={`simon-button 3 yellow-button play-buttons ${this.buttonLit('yellow')}`} onClick={() => this.handleQuadrantClick('yellow')} disabled={this.playButtonsEnable()}></button>
             </div>
             <div className='Buttons Blue border-top border-bottom border-right'>
               <audio ref={(element) => { this.blue = element; }}>
                 <source src={blueSound} type='audio/mpeg'/>
               </audio>
-              <button className={`4 blue-button play-buttons ${this.buttonLit('blue')}`} onClick={() => this.handleQuadrantClick('blue')} disabled={this.playButtonsEnable()}></button>
+              <button className={`simon-button 4 blue-button play-buttons ${this.buttonLit('blue')}`} onClick={() => this.handleQuadrantClick('blue')} disabled={this.playButtonsEnable()}></button>
             </div>
           </div>
         </div>
