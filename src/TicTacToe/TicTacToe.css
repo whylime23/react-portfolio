@@ -1,5 +1,5 @@
 .TicTacToe {
-  background: url('./images/tttBackground.jpg')
+  background: #eae8eb url('./images/tttBackground.jpg')
     no-repeat
     center
     center
@@ -75,7 +75,7 @@
 }
 
 .win-buttons {
-  font-size: 0.8em !important; 
+  font-size: 0.8em !important;
   padding: 5px 10px;
   margin: 5px;
 }
