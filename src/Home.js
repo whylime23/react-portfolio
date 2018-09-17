@@ -50,7 +50,17 @@ class Home extends Component {
 
               <h2>Independent Projects</h2>
               <div className='Portfolio'>
-                <a href="http://www.recipeshelf.com.au" target="blank"><img className='screenshot-important' src={recipeShelf} alt='Recipe Shelf' /></a>
+                <div className='rs-container'>
+                  <img className='rs-screenshot screenshot-important' src={recipeShelf} alt='Recipe Shelf' />
+                  <div className='rs-overlay'>
+                    <div className='rs-overlay-buttons'>
+                      <a href="http://www.recipeshelf.com.au" target="blank">Original Site</a>
+                    </div>
+                    <div className='rs-overlay-buttons'>
+                      <a href="https://recipeshelf-master.netlify.com/" target="blank">Dev Site <br />[In Progress]</a>
+                    </div>
+                  </div>
+                </div>
                 <div className='screenshot-desc'>
                   <p className='caption'>Working collaboratively to rebuild the existing website in React.</p>
                 </div>
